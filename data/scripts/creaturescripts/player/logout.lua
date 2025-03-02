@@ -3,6 +3,9 @@ local playerLogout = CreatureEvent("PlayerLogout")
 function playerLogout.onLogout(player)
 	local playerId = player:getId()
 
+	-- Remove o evento arenaDeath ao deslogar
+	player:unregisterEvent("arenaDeath")
+
 	if _G.NextUseStaminaTime[playerId] then
 		_G.NextUseStaminaTime[playerId] = nil
 	end
