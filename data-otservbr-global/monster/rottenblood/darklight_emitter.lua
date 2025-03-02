@@ -83,10 +83,10 @@ monster.loot = {
 
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1050 },
-	{ name = "combat", interval = 2600, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -1400, maxDamage = -1750, length = 8, spread = 3, effect = CONST_ME_HITBYFIRE, target = false },
-	{ name = "combat", interval = 3100, chance = 20, type = COMBAT_HOLYDAMAGE, minDamage = -1000, maxDamage = -1600, length = 8, spread = 3, effect = CONST_ME_HOLYAREA, target = false },
-	{ name = "combat", interval = 2600, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -1200, maxDamage = -1650, radius = 5, effect = CONST_ME_HITBYFIRE, target = true },
-	{ name = "largefirering", interval = 2000, chance = 10, minDamage = -800, maxDamage = -1400, target = false },
+	{ name = "combat", interval = 2000, chance = 30, type = COMBAT_FIREDAMAGE, minDamage = -1400, maxDamage = -1750, length = 8, spread = 3, effect = CONST_ME_HITBYFIRE, target = false },
+	{ name = "combat", interval = 2000, chance = 30, type = COMBAT_HOLYDAMAGE, minDamage = -1000, maxDamage = -1600, length = 8, spread = 3, effect = CONST_ME_HOLYAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 30, type = COMBAT_FIREDAMAGE, minDamage = -1200, maxDamage = -1650, radius = 5, effect = CONST_ME_HITBYFIRE, target = true },
+	{ name = "largefirering", interval = 2000, chance = 20, minDamage = -800, maxDamage = -1400, target = false },
 }
 
 monster.defenses = {

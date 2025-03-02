@@ -84,10 +84,10 @@ monster.loot = {
 
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -900 },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -1400, maxDamage = -1900, length = 7, spread = 0, effect = CONST_ME_PINK_ENERGY_SPARK, target = false },
-	{ name = "combat", interval = 2500, chance = 20, type = COMBAT_HOLYDAMAGE, minDamage = -1500, maxDamage = -1600, radius = 5, effect = CONST_ME_GHOSTLY_BITE, target = true },
-	{ name = "largeholyring", interval = 2000, chance = 15, minDamage = -1400, maxDamage = -1900 },
-	{ name = "energy chain", interval = 3200, chance = 20, minDamage = -800, maxDamage = -1200 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -1400, maxDamage = -1900, length = 7, spread = 0, effect = CONST_ME_PINK_ENERGY_SPARK, target = false },
+	{ name = "combat", interval = 2000, chance = 30, type = COMBAT_HOLYDAMAGE, minDamage = -1500, maxDamage = -1600, radius = 5, effect = CONST_ME_GHOSTLY_BITE, target = true },
+	{ name = "largeholyring", interval = 2000, chance = 25, minDamage = -1400, maxDamage = -1900 },
+	{ name = "energy chain", interval = 3200, chance = 30, minDamage = -800, maxDamage = -1200 },
 }
 
 monster.defenses = {

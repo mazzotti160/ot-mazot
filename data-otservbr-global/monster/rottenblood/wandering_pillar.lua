@@ -99,10 +99,10 @@ monster.loot = {
 
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1200 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -1400, maxDamage = -1650, length = 8, spread = 3, effect = CONST_ME_BLUE_ENERGY_SPARK, target = false },
-	{ name = "combat", intervall = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -1100, maxDamage = -1500, radius = 5, effect = CONST_ME_PINK_BEAM, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -1400, maxDamage = -1700, radius = 5, effect = CONST_ME_HITBYFIRE, target = true },
-	{ name = "largeholyring", interval = 3000, chance = 15, minDamage = -900, maxDamage = -1250 },
+	{ name = "combat", interval = 2000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -1400, maxDamage = -1650, length = 8, spread = 3, effect = CONST_ME_BLUE_ENERGY_SPARK, target = false },
+	{ name = "combat", intervall = 2000, chance = 30, type = COMBAT_ENERGYDAMAGE, minDamage = -1100, maxDamage = -1500, radius = 5, effect = CONST_ME_PINK_BEAM, target = false },
+	{ name = "combat", interval = 2000, chance = 30, type = COMBAT_FIREDAMAGE, minDamage = -1400, maxDamage = -1700, radius = 5, effect = CONST_ME_HITBYFIRE, target = true },
+	{ name = "largeholyring", interval = 2000, chance = 25, minDamage = -900, maxDamage = -1250 },
 }
 
 monster.defenses = {
