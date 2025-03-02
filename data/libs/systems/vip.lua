@@ -17,9 +17,9 @@ function Player.onRemoveVip(self)
 	local playerOutfit = self:getOutfit()
 	if table.contains(config.outfits, playerOutfit.lookType) then
 		if self:getSex() == PLAYERSEX_FEMALE then
-			playerOutfit.lookType = 136
+		--	playerOutfit.lookType = 136
 		else
-			playerOutfit.lookType = 128
+		--	playerOutfit.lookType = 128
 		end
 		playerOutfit.lookAddons = 0
 

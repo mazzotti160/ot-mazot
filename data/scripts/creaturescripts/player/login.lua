@@ -136,7 +136,16 @@ function playerLoginGlobal.onLogin(player)
 
 	-- Set Ghost Mode
 	if player:getGroup():getId() >= GROUP_TYPE_GAMEMASTER then
-		player:setOutfit(266)
+	player:setOutfit({
+		lookTypeEx = 0,
+		lookType = 266,
+		lookHead = 0,
+		lookBody = 0,
+		lookLegs = 0,
+		lookFeet = 0,
+		lookAddons = 0,
+		lookMount = 0,
+	})
 	end
 
 	-- Resets
