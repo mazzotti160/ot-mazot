@@ -181,7 +181,7 @@ function playerLoginGlobal.onLogin(player)
 	-- Change support outfit to a normal outfit to open customize character without crashes
 	local playerOutfit = player:getOutfit()
 	if table.contains({ 75, 266, 302 }, playerOutfit.lookType) then
-		playerOutfit.lookType = 136
+		playerOutfit.lookType = 266
 		playerOutfit.lookAddons = 0
 		player:setOutfit(playerOutfit)
 	end

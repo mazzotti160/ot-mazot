@@ -75523,75 +75523,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="duration" value="10"/>
 		<attribute key="fluidSource" value="blood"/>
 	</item>
-	<item id="43751" article="a" name="dead werecrocodile">
-		<attribute key="decayTo" value="0"/>
-		<attribute key="duration" value="60"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43752" article="a" name="dead werecrocodile">
-		<attribute key="containerSize" value="30"/>
-		<attribute key="decayTo" value="43751"/>
-		<attribute key="duration" value="30"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43753" article="a" name="dead werecrocodile">
-		<attribute key="containerSize" value="30"/>
-		<attribute key="decayTo" value="43752"/>
-		<attribute key="duration" value="30"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43754" article="a" name="dead werecrocodile">
-		<attribute key="containerSize" value="30"/>
-		<attribute key="decayTo" value="43753"/>
-		<attribute key="duration" value="10"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43755" article="a" name="dead werepanther">
-		<attribute key="decayTo" value="0"/>
-		<attribute key="duration" value="60"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43756" article="a" name="dead werepanther">
-		<attribute key="containerSize" value="30"/>
-		<attribute key="decayTo" value="43755"/>
-		<attribute key="duration" value="30"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43757" article="a" name="dead werepanther">
-		<attribute key="containerSize" value="30"/>
-		<attribute key="decayTo" value="43756"/>
-		<attribute key="duration" value="30"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43758" article="a" name="dead werepanther">
-		<attribute key="containerSize" value="30"/>
-		<attribute key="decayTo" value="43757"/>
-		<attribute key="duration" value="10"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43764" article="a" name="dead feral werecrocodile">
-		<attribute key="decayTo" value="0"/>
-		<attribute key="duration" value="60"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43765" article="a" name="dead feral werecrocodile">
-		<attribute key="containerSize" value="30"/>
-		<attribute key="decayTo" value="43764"/>
-		<attribute key="duration" value="30"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43766" article="a" name="dead feral werecrocodile">
-		<attribute key="containerSize" value="30"/>
-		<attribute key="decayTo" value="43765"/>
-		<attribute key="duration" value="30"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
-	<item id="43767" article="a" name="dead feral werecrocodile">
-		<attribute key="containerSize" value="30"/>
-		<attribute key="decayTo" value="43766"/>
-		<attribute key="duration" value="10"/>
-		<attribute key="fluidSource" value="blood"/>
-	</item>
 	<item id="43813" article="a" name="dead bloated man-maggot">
 		<attribute key="decayTo" value="0"/>
 		<attribute key="duration" value="60"/>
@@ -82805,5 +82736,125 @@ Granted by TibiaGoals.com"/>
 		<attribute key="type" value="dummy">
 			<attribute key="rate" value="110"/>
 		</attribute>
+	</item>	
+	<item id="43759" article="a" name="dead white weretiger">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="0"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>	
+	<item id="43760" article="a" name="dead white weretiger">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43759"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43761" article="a" name="dead white weretiger">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43760"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43762" article="a" name="dead white weretiger">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43761"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43747" article="a" name="dead weretiger">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="0"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>	
+	<item id="43748" article="a" name="dead weretiger">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43747"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43749" article="a" name="dead weretiger">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43748"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43750" article="a" name="dead weretiger">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43749"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>	
+	<item id="43751" article="a" name="dead werecrocodile">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="0"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>	
+	<item id="43752" article="a" name="dead werecrocodile">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43751"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43753" article="a" name="dead werecrocodile">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43752"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43754" article="a" name="dead werecrocodile">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43753"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>	
+	<item id="43755" article="a" name="dead werepanther">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="0"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>	
+	<item id="43756" article="a" name="dead werepanther">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43755"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43757" article="a" name="dead werepanther">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43756"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43758" article="a" name="dead werepanther">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43757"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+		<item id="43764" article="a" name="dead feral werecrocodile">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="0"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>	
+	<item id="43765" article="a" name="dead feral werecrocodile">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43764"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43766" article="a" name="dead feral werecrocodile">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43765"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
+	</item>		
+	<item id="43767" article="a" name="dead feral werecrocodile">
+		<attribute key="containerSize" value="30"/>
+		<attribute key="decayTo" value="43766"/>
+		<attribute key="duration" value="10"/>
+		<attribute key="fluidsource" value="blood"/>
 	</item>	
 </items>
