@@ -118,7 +118,7 @@ function checkWaveCompletion(wave, config, z, eventId)
     local players = Game.getSpectators(config.centerPosition, false, true, config.spawnArea.x, config.spawnArea.x, config.spawnArea.y, config.spawnArea.y)
 
     if #players == 0 then
-        print("Nenhum jogador na sala. Cancelando evento e removendo monstros.")
+        --print("Nenhum jogador na sala. Cancelando evento e removendo monstros.")
         removeMonsters(config)
         stopEvent(eventId)
         return
@@ -134,7 +134,7 @@ function checkWaveCompletion(wave, config, z, eventId)
             player:setStorageValue(4535656514002, os.time() + 60)
         end
 
-        print("Todos os monstros da Wave " .. wave .. " foram mortos. Iniciando próxima wave em 3 segundos.")
+        --print("Todos os monstros da Wave " .. wave .. " foram mortos. Iniciando próxima wave em 3 segundos.")
         addEvent(function()
             local nextWave = wave + 1
             local monsters = getMonstersForWave(nextWave)
@@ -145,7 +145,7 @@ function checkWaveCompletion(wave, config, z, eventId)
             waitAndCheckWaveCompletion(nextWave, config, z, eventId)
         end, 3000)
     else
-        print("Criaturas encontradas: " .. creatureNames .. " Total: " .. creatureCount)
+      --  print("Criaturas encontradas: " .. creatureNames .. " Total: " .. creatureCount)
         waitAndCheckWaveCompletion(wave, config, z, eventId)
     end
 end
