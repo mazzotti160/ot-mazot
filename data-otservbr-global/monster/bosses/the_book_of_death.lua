@@ -17,7 +17,7 @@ monster.health = 7800
 monster.maxHealth = 7800
 monster.race = "undead"
 monster.corpse = 0
-monster.speed = 39
+monster.speed = 205
 monster.manaCost = 0
 
 monster.events = {

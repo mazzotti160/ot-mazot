@@ -30,7 +30,7 @@ monster.health = 7300
 monster.maxHealth = 7300
 monster.race = "blood"
 monster.corpse = 33981
-monster.speed = 125
+monster.speed = 2055
 monster.manaCost = 0
 
 monster.faction = FACTION_LIONUSURPERS

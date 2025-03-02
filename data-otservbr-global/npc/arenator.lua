@@ -48,6 +48,7 @@ npcConfig.shop = {
 { itemName = "bag you covet", clientId = 43895, buy = 2500 },
 { itemName = "bag you desire", clientId = 34109, buy = 1750 },
 { itemName = "primal bag", clientId = 39546, buy = 2150 },
+{ itemName = "charm eggs", clientId = 3215, buy = 3 },
 }
 
 -- On buy npc shop message

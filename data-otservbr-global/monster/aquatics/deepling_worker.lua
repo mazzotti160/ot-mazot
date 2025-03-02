@@ -30,7 +30,7 @@ monster.health = 190
 monster.maxHealth = 190
 monster.race = "blood"
 monster.corpse = 14094
-monster.speed = 65
+monster.speed = 205
 monster.manaCost = 0
 
 monster.faction = FACTION_DEEPLING

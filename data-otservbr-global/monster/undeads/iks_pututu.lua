@@ -30,7 +30,7 @@ monster.health = 1310
 monster.maxHealth = 1310
 monster.race = "blood"
 monster.corpse = 42061
-monster.speed = 110
+monster.speed = 2050
 monster.manaCost = 0
 
 monster.changeTarget = {

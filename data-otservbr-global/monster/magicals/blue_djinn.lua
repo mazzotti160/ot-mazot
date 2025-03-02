@@ -30,7 +30,7 @@ monster.health = 330
 monster.maxHealth = 330
 monster.race = "blood"
 monster.corpse = 6020
-monster.speed = 110
+monster.speed = 2050
 monster.manaCost = 0
 
 monster.faction = FACTION_MARID
