@@ -1,6 +1,6 @@
 local configGlobal = {
     time = 20 * 60,
-    testmode = true,
+    testmode = false,
     maxTime = 23 * 60,
     exitPos = Position(32216, 32209, 7),
     level = 100,
@@ -196,6 +196,7 @@ function guildDungeonLever.onUse(player, item, fromPosition, itemEx, toPosition,
                 creature:setStorageValue(453565651409, 1)
                 creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have 30  minutes inside, stay alive!")
                 creature:teleportTo(selectedConfig.dungeonPos)
+				player:registerEvent("arenaDeath")
                 creature:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
                 creature:setStorageValue(configGlobal.Storagetime, os.time() + (configGlobal.Timer / 1000))
 				player:say("Wave 1 started, you have 30 minutes inside, good luck! ", TALKTYPE_MONSTER_YELL)

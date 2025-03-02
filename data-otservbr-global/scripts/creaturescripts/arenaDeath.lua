@@ -13,6 +13,8 @@ function arenaDeath.onPrepareDeath(player)
 		
 		if pos:isInRange(fromPos, toPos) then
 			player:teleportTo(exitDungeonPos) -- Teleporta o jogador para fora da arena
+			player:addHealth(100000000)
+			player:addMana(100000000)			
 			return false -- Cancela a morte dentro da arena
 		end
 	end
