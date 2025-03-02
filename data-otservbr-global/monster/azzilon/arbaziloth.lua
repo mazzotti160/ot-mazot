@@ -100,16 +100,19 @@ monster.loot = {
 	{ name = "giant sword", chance = 9752, maxCount = 1 },
 	{ name = "great spirit potion", chance = 5456, maxCount = 4 },
 	{ name = "supreme health potion", chance = 14153, maxCount = 8 },
-	{ name = "death ring", chance = 13630, maxCount = 1 },
+	--{ name = "death ring", chance = 13630, maxCount = 1 },
 	{ name = "devil helmet", chance = 9028, maxCount = 1 },
 	{ name = "ice rapier", chance = 14227, maxCount = 1 },
-	{ name = "life ring", chance = 6647, maxCount = 1 },
+	--{ name = "life ring", chance = 6647, maxCount = 1 },
 	{ name = "magma amulet", chance = 8342, maxCount = 1 },
 	{ id = 3039, chance = 8535, maxCount = 1 }, -- red gem
+		{ id = 6299, chance = 13630, maxCount = 1 }, -- death ring
+		{ id = 3052, chance = 6647, maxCount = 1 }, -- life ring
+		{ id = 50061, chance = 600, maxCount = 1 }, -- demon skull (addon)
 	{ name = "strange helmet", chance = 8966, maxCount = 1 },
 	{ name = "demon claws", chance = 600, maxCount = 1 },--Demon Claws
-	{ name = "demon skull", chance = 600, maxCount = 1 }--Demon Skull
-	{ name = "demon in a green box", chance = 600, maxCount = 1 }--Demon In A Green Box
+	--{ name = "demon skull", chance = 600, maxCount = 1 },--Demon Skull
+	{ name = "demon in a green box", chance = 600, maxCount = 1 },--Demon In A Green Box
 }
 
 monster.attacks = {

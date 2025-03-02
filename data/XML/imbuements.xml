@@ -151,10 +151,12 @@
 		<attribute key="description" value="Raises crit hit damage by 50% and crit hit chance by 10%." />
 		<attribute key="effect" type="skill" value="critical" bonus="5000" chance="1000" />
 		<attribute key="item" value="22721" count="6" />
+	</imbuement>	
 	<imbuement name="Strike" base="4" category="3" iconid="1" premium="0" storage="50501">
 		<attribute key="description" value="Raises crit hit damage by 62% and crit hit chance by 12%." />
 		<attribute key="effect" type="skill" value="critical" bonus="6200" chance="1200" />
 		<attribute key="item" value="22721" count="9" />
+	</imbuement>	
 	<imbuement name="Strike" base="5" category="3" iconid="1" premium="0" storage="50501">
 		<attribute key="description" value="Raises crit hit damage by 62% and crit hit chance by 12%." />
 		<attribute key="effect" type="skill" value="critical" bonus="6200" chance="1200" />
@@ -406,7 +408,5 @@
 		<attribute key="description" value="Raises capacity by 50." />
 		<attribute key="effect" type="capacity" value="50" />
 		<attribute key="item" value="22721" count="18" />
-	</imbuement>		
-		<!-- custom imbuements -->
-		
+	</imbuement>			
 </imbuements>
