@@ -76104,7 +76104,7 @@ Granted by TibiaGoals.com"/>
 		</attribute>
 		<attribute key="augments" value="1">
 			 <attribute key="hell's core" value="base">
-				<attribute key="value" value="8"/>
+				<attribute key="value" value="3"/>
 			</attribute>
 			<attribute key="energy wave" value="base">
 				<attribute key="value" value="4"/>
