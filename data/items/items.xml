@@ -9604,6 +9604,7 @@
 		<attribute key="primarytype" value="distance weapons"/>
 		<attribute key="weaponType" value="distance"/>
 		<attribute key="slotType" value="two-handed"/>
+				<attribute key="attack" value="1"/>
 		<attribute key="ammotype" value="arrow"/>
 		<attribute key="range" value="6"/>
 		<attribute key="weight" value="3100"/>
@@ -20379,6 +20380,7 @@
 		<attribute key="weaponType" value="distance"/>
 		<attribute key="slotType" value="two-handed"/>
 		<attribute key="ammotype" value="arrow"/>
+				<attribute key="attack" value="1"/>
 		<attribute key="hitchance" value="5"/>
 		<attribute key="range" value="6"/>
 		<attribute key="weight" value="3900"/>
@@ -21621,6 +21623,7 @@
 		<attribute key="weaponType" value="distance"/>
 		<attribute key="slotType" value="two-handed"/>
 		<attribute key="ammotype" value="arrow"/>
+			<attribute key="attack" value="1"/>	
 		<attribute key="hitchance" value="7"/>
 		<attribute key="range" value="7"/>
 		<attribute key="weight" value="3500"/>
