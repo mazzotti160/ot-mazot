@@ -17,7 +17,7 @@ monster.health = 8500
 monster.maxHealth = 8500
 monster.race = "blood"
 monster.corpse = 0
-monster.speed = 2055
+monster.speed = 205
 monster.manaCost = 0
 
 monster.faction = FACTION_LION

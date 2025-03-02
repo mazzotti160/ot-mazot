@@ -31,7 +31,7 @@ monster.health = 330
 monster.maxHealth = 330
 monster.race = "blood"
 monster.corpse = 6016
-monster.speed = 2050
+monster.speed = 205
 monster.manaCost = 0
 
 monster.faction = FACTION_EFREET

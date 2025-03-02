@@ -99,9 +99,9 @@ monster.loot = {
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = -600, maxDamage = -1055 },
 	-- poison
-	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 37, minDamage = -400, maxDamage = -580, radius = 4, effect = CONST_ME_POISONAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 22, type = COMBAT_EARTHDAMAGE, minDamage = -400, maxDamage = -480, radius = 3, shootEffect = CONST_ANI_ENVENOMEDARROW, effect = CONST_ME_GREEN_RINGS, target = true },
-	{ name = "combat", interval = 2000, chance = 23, type = COMBAT_EARTHDAMAGE, minDamage = -400, maxDamage = -505, range = 7, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = true },
+	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 52, minDamage = -400, maxDamage = -580, radius = 4, effect = CONST_ME_POISONAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 52, type = COMBAT_EARTHDAMAGE, minDamage = -400, maxDamage = -480, radius = 3, shootEffect = CONST_ANI_ENVENOMEDARROW, effect = CONST_ME_GREEN_RINGS, target = true },
+	{ name = "combat", interval = 2000, chance = 41, type = COMBAT_EARTHDAMAGE, minDamage = -400, maxDamage = -505, range = 7, shootEffect = CONST_ANI_POISON, effect = CONST_ME_POISONAREA, target = true },
 }
 
 monster.defenses = {

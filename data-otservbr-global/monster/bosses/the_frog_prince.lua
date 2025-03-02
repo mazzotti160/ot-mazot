@@ -22,7 +22,7 @@ monster.health = 55
 monster.maxHealth = 55
 monster.race = "venom"
 monster.corpse = 6079
-monster.speed = 2055
+monster.speed = 205
 monster.manaCost = 0
 
 monster.changeTarget = {
