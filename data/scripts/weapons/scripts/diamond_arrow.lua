@@ -17,34 +17,33 @@ combat:setParameter(COMBAT_PARAM_BLOCKARMOR, true)
 function onGetFormulaValues(player, skill, attack, factor)
     local level = player:getLevel()
     local distanceSkill = player:getEffectiveSkillLevel(SKILL_DISTANCE)
+    local attack2 = attack * 12
 
-    local attackNew = attack - 37 -- Redução obrigatória de 37
+   -- print("Level do jogador: " .. level)
+   -- print("Skill de distância do jogador: " .. distanceSkill)
+   -- print("Ataque da arma (attack): " .. attack)
+   -- print("Ataque da arma multiplicado por 10 (attack2): " .. attack2)
 
-    function getAttackMultiplier(attackNew)
-        if attackNew < 10 then
-            return 1.0 + (attackNew * 0.04)
-        else
-            return 1.36 + ((attackNew - 9) * 0.08)
-        end
-    end
+    local min = ((level / 8) + (2 * distanceSkill)) * factor + attack2
+    local max = ((level / 8) + (2 * distanceSkill)) * factor + attack2
 
-    local multiplier = getAttackMultiplier(attackNew)
-    local min = ((level / 7) + (5 * distanceSkill)) * factor * multiplier
-    local max = ((level / 7) + (5 * distanceSkill)) * factor * multiplier
+  --  print("Dano mínimo calculado (antes dos limites): " .. min)
+   -- print("Dano máximo calculado (antes dos limites): " .. max)
 
-    local calculatedMin = (-min * (attackNew / 20)) * 0.4
-    local calculatedMax = (-max * (attackNew / 20)) * 0.5
+    local calculatedMin = -min * 0.81
+    local calculatedMax = -max * 1.01
 
-    -- Garante que o dano mínimo seja pelo menos 150
     if calculatedMin > -150 then
         calculatedMin = -150
     end
 
-    -- Se o dano máximo for menor que 180, retorna -200 para ambos min e max
     if calculatedMax > -180 then
         calculatedMin = -180
         calculatedMax = -180
     end
+
+   -- print("Dano mínimo final: " .. calculatedMin)
+   -- print("Dano máximo final: " .. calculatedMax)
 
     return calculatedMin, calculatedMax
 end
@@ -55,13 +54,13 @@ combat:setArea(area)
 local diamondArrow = Weapon(WEAPON_AMMO)
 
 function diamondArrow.onUseWeapon(player, variant)
+  --  print("Flecha de diamante usada pelo jogador: " .. player:getName())
     return combat:execute(player, variant)
 end
 
 diamondArrow:id(25757)
 diamondArrow:id(35901)
 diamondArrow:level(150)
-diamondArrow:attack(37)
 diamondArrow:action("removecount")
 diamondArrow:ammoType("arrow")
 diamondArrow:shootType(CONST_ANI_DIAMONDARROW)

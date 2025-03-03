@@ -49027,21 +49027,13 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 	<item id="25755" name="RESERVED SPRITE"/>
 	<item id="25756" article="an" name="energized tile"/>
 	<item id="25757" article="a" name="diamond arrow">
-			<attribute key="stacksize" value="250"/>	
 		<attribute key="primarytype" value="ammunition"/>
-		<attribute key="ammotype" value="arrow"/>
-		<attribute key="attack" value="37"/>
-		<attribute key="decayTo" value="0"/>
-		<attribute key="duration" value="3600"/>
-		<attribute key="maxhitchance" value="100"/>
+		<attribute key="weaponType" value="ammunition"/>
+					<attribute key="stacksize" value="250"/>
 		<attribute key="ammotype" value="arrow"/>
 		<attribute key="shootType" value="diamondarrow"/>
-		<attribute key="stopduration" value="0"/>
-		<attribute key="showduration" value="1"/>
 		<attribute key="maxhitchance" value="100"/>
-		<attribute key="duration" value="3600"/>
-		<attribute key="decayTo" value="0"/>
-		<attribute key="attack" value="37"/>
+		<attribute key="attack" value="0"/>
 		<attribute key="weight" value="80"/>
 	</item>
 	<item id="25758" article="a" name="spectral bolt">
@@ -67028,7 +67020,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="ammotype" value="arrow"/>
 		<attribute key="shootType" value="diamondarrow"/>
 		<attribute key="maxhitchance" value="100"/>
-		<attribute key="attack" value="37"/>
+		<attribute key="attack" value="0"/>
 		<attribute key="weight" value="80"/>
 	</item>
 	<item id="35902" article="a" name="spectral bolt">
