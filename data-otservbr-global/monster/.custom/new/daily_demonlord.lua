@@ -86,6 +86,7 @@ monster.voices = {
 }
 
 monster.loot = {
+	{ id = 3043, chance = 10000, maxCount = 100 }, -- crystal coin		
 	{ id = 3043, chance = 10000, maxCount = 100 }, -- crystal coin
 	{ id = 20264, chance = 25000, maxCount = 3 }, -- unrealized dream
 	{ id = 20063, chance = 25000, maxCount = 3 }, -- dream matter
@@ -95,13 +96,17 @@ monster.loot = {
 	{ id = 30059, chance = 100000, maxCount = 5 }, --giant gem	
 	{ id = 30060, chance = 100000, maxCount = 5 }, --giant gem	
 	{ id = 30061, chance = 100000, maxCount = 5 }, --giant gem	
-	{ id = 16828, chance = 100000, maxCount = 2 }, --minor token
-	{ id = 16829, chance = 100000, maxCount = 2 }, --major
+	--{ id = 16828, chance = 100000, maxCount = 2 }, --minor token
+	{ name = "minor crystalline token", chance = 100000, maxCount = 2 },
+	{ name = "major crystalline token", chance = 100000, maxCount = 2 },
+	{ name = "greater guardian gem", chance = 20000, maxCount = 1 },
+	{ name = "greater mystic gem", chance = 20000, maxCount = 1 },
+	{ name = "greater sage gem", chance = 20000, maxCount = 1 },
+	{ name = "greater marksman gem", chance = 20000, maxCount = 1 },	
+	--{ id = 16829, chance = 100000, maxCount = 2 }, --major
 	{ id = 16242, chance = 100000, maxCount = 5 }, --red teleport crystal
 	{ id = 36827, chance = 5000 }, -- drome cube
-	{ id = 19082, chance = 300 }, -- roletinha
-	
-	--craft abaixo chance minima
+	{ id = 19082, chance = 300 }, -- roletinha	
 	--skulls
 	{id = 37341, chance = 1, count = 1},
 	{id = 37340, chance = 1, count = 1},
@@ -130,8 +135,7 @@ monster.loot = {
 		{id = 3246, chance = 1, count = 1}, -- boots of waterwalking
 		{id = 3363, chance = 1, count = 1}, -- dragon scale legs
 		{id = 3402, chance = 1, count = 1}, -- native armor
-		{id = 3365, chance = 1, count = 1}, -- golden helmet		
-	
+		{id = 3365, chance = 1, count = 1}, -- golden helmet			
 }
 
 monster.attacks = {

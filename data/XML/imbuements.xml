@@ -388,7 +388,6 @@
 	<imbuement name="Featherweight" base="1" category="17" iconid="76" premium="0" storage="0">
 		<attribute key="description" value="Raises capacity by 8." />
 		<attribute key="effect" type="capacity" value="8" />
-		<attribute key="item" value="25694" count="0" />
 	</imbuement>
 	<imbuement name="Featherweight" base="2" category="17" iconid="77" premium="0" storage="0">
 		<attribute key="description" value="Raises capacity by 15." />

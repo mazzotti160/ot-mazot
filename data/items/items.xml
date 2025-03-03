@@ -7248,7 +7248,9 @@
 		<attribute key="showAttributes" value="1"/>
 		<attribute key="speed" value="20"/>
 		<attribute key="weight" value="750"/>
-		<attribute key="imbuementslot" value="1"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase speed" value="3"/>
+		</attribute>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="feet"/>
 		</attribute>
@@ -38980,7 +38982,7 @@
 	<item id="19081" article="a" name="skull"/>
 	<item id="19082" article="a" name="golden raid token">
 				<attribute key="stacksize" value="250"/>
-		<attribute key="description" value="Use this to try your luck in our roullete."/>	
+		<attribute key="description" value="Use o token pra tentar a sorte na roleta!"/>	
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="110"/>
 	</item>
