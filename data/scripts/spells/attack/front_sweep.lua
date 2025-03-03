@@ -7,9 +7,9 @@ combat:setArea(createCombatArea(AREA_WAVE6, AREADIAGONAL_WAVE6))
 
 function onGetFormulaValues(player, skill, attack, factor)
 	local level = player:getLevel()
-	local min = (level / 6) + ((10 * skill) + attack) * 0.9
-	local max = (level / 6) + ((10 * skill) + attack) * 1.1
-	return -min * 0.75 * factor, -max * 0.75 * factor -- TODO : Use New Real Formula instead of an %
+	local min = (level / 6) + ((10 * skill) + attack) * 0.55
+	local max = (level / 6) + ((10 * skill) + attack) * 0.55
+	return -min * 0.5 * factor, -max * 0.5 * factor -- TODO : Use New Real Formula instead of an %
 end
 
 combat:setCallback(CALLBACK_PARAM_SKILLVALUE, "onGetFormulaValues")
