@@ -120,7 +120,7 @@ local foods = {
 	[37531] = { 5, "Mmmm." }, -- candy floss
 	[37532] = { 15, "Mmmm." }, -- ice cream cone
 	[37533] = { 60, "Mmmm." }, -- birthday layer cake
-	[48240] = { 90, "Munch." }, -- infinite food
+	[48240] = { 30, "MazOT." }, -- infinite food
 }
 
 local food = Action()
