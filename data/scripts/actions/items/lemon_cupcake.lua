@@ -2,21 +2,21 @@ local testModeCD = false -- Defina como true para ignorar cooldowns
 local testModeRmv = false -- Defina como true para não remover o item
 
 local distanceCondition = Condition(CONDITION_ATTRIBUTES)
-distanceCondition:setParameter(CONDITION_PARAM_TICKS, 10 * 60 * 1000)
+distanceCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)
 distanceCondition:setParameter(CONDITION_PARAM_SUBID, AttrSubId_JeanPierreDistance)
 distanceCondition:setParameter(CONDITION_PARAM_SKILL_DISTANCE, 12)
 distanceCondition:setParameter(CONDITION_PARAM_SKILL_FIST, 24)
 distanceCondition:setParameter(CONDITION_PARAM_BUFF_SPELL, true)
 
 local meleeCondition = Condition(CONDITION_ATTRIBUTES)
-meleeCondition:setParameter(CONDITION_PARAM_TICKS, 10 * 60 * 1000)
+meleeCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)
 meleeCondition:setParameter(CONDITION_PARAM_SUBID, AttrSubId_JeanPierreMelee)
 meleeCondition:setParameter(CONDITION_PARAM_SKILL_MELEE, 12)
 meleeCondition:setParameter(CONDITION_PARAM_SKILL_FIST, 24)
 meleeCondition:setParameter(CONDITION_PARAM_BUFF_SPELL, true)
 
 local mlevelCondition = Condition(CONDITION_ATTRIBUTES)
-mlevelCondition:setParameter(CONDITION_PARAM_TICKS, 10 * 60 * 1000)
+mlevelCondition:setParameter(CONDITION_PARAM_TICKS, 60 * 60 * 1000)
 mlevelCondition:setParameter(CONDITION_PARAM_SUBID, AttrSubId_JeanPierreMagic)
 mlevelCondition:setParameter(CONDITION_PARAM_STAT_MAGICPOINTS, 12)
 mlevelCondition:setParameter(CONDITION_PARAM_SKILL_FIST, 24)
@@ -62,7 +62,7 @@ function lemonCupcake.onUse(player, item, fromPosition, target, toPosition, isHo
     end
 
     if not testModeCD then
-        player:setExhaustion("lemon-cupcake-cooldown", 10 * 60)
+        player:setExhaustion("lemon-cupcake-cooldown", 60 * 60)
     end
     
     if not testModeRmv then
