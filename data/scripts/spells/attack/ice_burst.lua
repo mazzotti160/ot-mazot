@@ -4,8 +4,8 @@ combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_ICEATTACK)
 combat:setArea(createCombatArea(AREA_CIRCLE5X5V2))
 
 function onGetFormulaValues(player, level, maglevel)
-	local min = (level / 6) + ((10 * maglevel)) * 1.9
-	local max = (level / 6) + ((10 * maglevel)) * 2.3
+local min = (level / 6) + ((10 * maglevel)) * 1.71
+local max = (level / 6) + ((10 * maglevel)) * 2.07
 	return -min, -max
 end
 

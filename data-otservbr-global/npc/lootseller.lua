@@ -84,6 +84,7 @@ npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {
 	{ itemName = ".All loot in pouch", clientId = 23721, sell = 1 },
+	{ itemname = "glooth bag", clientId = 21203, sell = 1500 },
 --faltantes: { itemname = "", clientId = , sell = },
 --azzilon
 { itemname = "hellhunter eye", clientId = 50055, sell = 2950 },

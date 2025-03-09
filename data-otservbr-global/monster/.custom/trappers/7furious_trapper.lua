@@ -60,7 +60,9 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "combat", interval = 1000, chance = 100, type = COMBAT_HOLYDAMAGE, minDamage = -150, maxDamage = -500, range = 7, shootEffect = CONST_ANI_HOLY, target = true },
+	{ name = "combat", interval = 2000, chance = 100, type = COMBAT_HOLYDAMAGE, minDamage = -500, maxDamage = -800, range = 7, shootEffect = CONST_ANI_HOLY, target = true },
+  { name = "combat", interval = 2000, chance = 100, type = COMBAT_PHYSICALDAMAGE, minDamage = -700, maxDamage = -1000, range = 7, shootEffect = CONST_ANI_ARROW, target = false },
+
 	-- poison
 
 }

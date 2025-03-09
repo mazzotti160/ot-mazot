@@ -7,7 +7,7 @@ local config = {
 	playerPositions = {
 		{ pos = Position(33688, 32301, 15), teleport = Position(33712, 32297, 15), effect = CONST_ME_TELEPORT },
 		{ pos = Position(33688, 32302, 15), teleport = Position(33712, 32297, 15), effect = CONST_ME_TELEPORT },
-		{ pos = Position(33689, 32303, 15), teleport = Position(33712, 32297, 15), effect = CONST_ME_TELEPORT },
+		{ pos = Position(33688, 32303, 15), teleport = Position(33712, 32297, 15), effect = CONST_ME_TELEPORT },
 		{ pos = Position(33688, 32304, 15), teleport = Position(33712, 32297, 15), effect = CONST_ME_TELEPORT },
 		{ pos = Position(33688, 32305, 15), teleport = Position(33712, 32297, 15), effect = CONST_ME_TELEPORT },
 	},

@@ -255,10 +255,9 @@ function ZombieEvent:createAdvertisement(seconds)
         self:broadcast("We are about to begin...")
     end
 
-    local discount = math.ceil(math.max(5, seconds / 5))
-    cacheEventIds.createAdvertisement = addEvent(function() 
-        self:createAdvertisement(seconds - discount)
-    end, discount * 1000)
+    cacheEventIds.createAdvertisement = addEvent(function()
+        self:createAdvertisement(seconds - 15) -- Intervalo fixo de 5 segundos
+    end, 5000) -- 5000 milissegundos = 5 segundos
 end
 
 

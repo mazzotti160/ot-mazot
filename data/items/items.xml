@@ -15796,6 +15796,14 @@
 		<attribute key="primarytype" value="creature products"/>
 		<attribute key="weight" value="450"/>
 	</item>
+	<item id="43859" article="a" name="basalt core">
+		<attribute key="primarytype" value="creature products"/>
+		<attribute key="weight" value="100"/>
+	</item>	
+	<item id="43858" article="a" name="basalt crumbs">
+		<attribute key="primarytype" value="creature products"/>
+		<attribute key="weight" value="100"/>
+	</item>		
 	<item id="5878" article="a" name="minotaur leather">
 		<attribute key="primarytype" value="creature products"/>
 		<attribute key="showCount" value="0"/>

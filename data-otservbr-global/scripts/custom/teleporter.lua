@@ -5,12 +5,12 @@ local config = {
     storage = 9007,
     cooldown = 0,
     towns = {
-        { name = "Temple Thais", teleport = Position(32369, 32241, 7) },    
+        { name = "Temple Thais", teleport = Position(32369, 32241, 7) },
         { name = "Depot Thais", teleport = Position(32347, 32227, 7) },
         { name = "Npcs e Reward chest", teleport = Position(32210, 32300, 6) },
         { name = "Bosses", teleport = Position(32258, 32236, 6) },
-        { name = "Forja", teleport = Position(32209, 32275, 7) },		
-        { name = "Roleta", teleport = Position(32347, 32245, 7) },			
+        { name = "Forja", teleport = Position(32209, 32275, 7) },
+        { name = "Roleta", teleport = Position(32347, 32245, 7) },
         { name = "Ab'Dendriel", teleport = Position(32732, 31634, 7) },
         { name = "Ankrahmun", teleport = Position(33194, 32853, 8) },
         { name = "Carlin", teleport = Position(32360, 31782, 7) },
@@ -29,6 +29,18 @@ local config = {
         { name = "Venore", teleport = Position(32957, 32076, 7) },
         { name = "Yalahar", teleport = Position(32787, 31276, 7) },
     }
+}
+
+local VOCATION_BASE_ID = {
+    NONE = 0,
+    SORCERER = 1,
+    DRUID = 2,
+    PALADIN = 3,
+    KNIGHT = 4,
+    MASTER_SORCERER = 5,
+    ELDER_DRUID = 6,
+    ROYAL_PALADIN = 7,
+    ELITE_KNIGHT = 8,
 }
 
 local function supremeCubeMessage(player, effect, message)
@@ -56,47 +68,73 @@ function supremeCube.onUse(player, item, fromPosition, target, toPosition, isHot
         return false
     end
 
-    local window = ModalWindow({
-        title = "Supreme Cube",
-        message = "Select a City - Price: " .. config.price .. " gold.",
-    })
+    local vocation = player:getVocation()
+    local vocationId = vocation:getId()
 
-    -- Opção de teleportar para a casa do jogador (primeiro)
-    window:addChoice("House", function(player, button, choice)
-        if button.name == "Select" then
-            local house = player:getHouse()
-            if house then
-                player:teleportTo(house:getExitPosition(), true)
+    if vocationId == VOCATION_BASE_ID.NONE then
+        local window = ModalWindow({
+            title = "Supreme Cube",
+            message = "Select a destination - Price: " .. config.price .. " gold.",
+        })
+
+        window:addChoice("Temple Rook", function(player, button, choice)
+            if button.name == "Select" then
+                player:teleportTo(Position(32097, 32219, 7), true)
                 player:removeMoneyBank(config.price)
-                supremeCubeMessage(player, CONST_ME_TELEPORT, "Welcome to your house.")
+                supremeCubeMessage(player, CONST_ME_TELEPORT, "Welcome to Rookgaard.")
                 player:setStorageValue(config.storage, os.time() + config.cooldown)
-            else
-                supremeCubeMessage(player, CONST_ME_POFF, "You don't have a house.")
+            end
+            return true
+        end)
+
+        window:addButton("Select")
+        window:addButton("Close")
+        window:setDefaultEnterButton(0)
+        window:setDefaultEscapeButton(1)
+        window:sendToPlayer(player)
+    elseif vocationId == VOCATION_BASE_ID.SORCERER or vocationId == VOCATION_BASE_ID.DRUID or vocationId == VOCATION_BASE_ID.PALADIN or vocationId == VOCATION_BASE_ID.KNIGHT or vocationId == VOCATION_BASE_ID.MASTER_SORCERER or vocationId == VOCATION_BASE_ID.ELDER_DRUID or vocationId == VOCATION_BASE_ID.ROYAL_PALADIN or vocationId == VOCATION_BASE_ID.ELITE_KNIGHT then
+        local window = ModalWindow({
+            title = "Supreme Cube",
+            message = "Select a City - Price: " .. config.price .. " gold.",
+        })
+
+        window:addChoice("House", function(player, button, choice)
+            if button.name == "Select" then
+                local house = player:getHouse()
+                if house then
+                    player:teleportTo(house:getExitPosition(), true)
+                    player:removeMoneyBank(config.price)
+                    supremeCubeMessage(player, CONST_ME_TELEPORT, "Welcome to your house.")
+                    player:setStorageValue(config.storage, os.time() + config.cooldown)
+                else
+                    supremeCubeMessage(player, CONST_ME_POFF, "You don't have a house.")
+                end
+            end
+            return true
+        end)
+
+        for _, town in pairs(config.towns) do
+            if town.name then
+                window:addChoice(town.name, function(player, button, choice)
+                    if button.name == "Select" then
+                        player:teleportTo(town.teleport, true)
+                        player:removeMoneyBank(config.price)
+                        supremeCubeMessage(player, CONST_ME_TELEPORT, "Welcome to " .. town.name)
+                        player:setStorageValue(config.storage, os.time() + config.cooldown)
+                    end
+                    return true
+                end)
             end
         end
-        return true
-    end)
 
-    -- Agora itera pelas outras cidades
-    for _, town in pairs(config.towns) do
-        if town.name then
-            window:addChoice(town.name, function(player, button, choice)
-                if button.name == "Select" then
-                    player:teleportTo(town.teleport, true)
-                    player:removeMoneyBank(config.price)
-                    supremeCubeMessage(player, CONST_ME_TELEPORT, "Welcome to " .. town.name)
-                    player:setStorageValue(config.storage, os.time() + config.cooldown)
-                end
-                return true
-            end)
-        end
+        window:addButton("Select")
+        window:addButton("Close")
+        window:setDefaultEnterButton(0)
+        window:setDefaultEscapeButton(1)
+        window:sendToPlayer(player)
+    else
+        supremeCubeMessage(player, CONST_ME_POFF, "You can only use this item with a main vocation.")
     end
-
-    window:addButton("Select")
-    window:addButton("Close")
-    window:setDefaultEnterButton(0)
-    window:setDefaultEscapeButton(1)
-    window:sendToPlayer(player)
 
     return true
 end

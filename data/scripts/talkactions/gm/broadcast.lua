@@ -21,7 +21,7 @@ function broadcast.onSay(player, words, param)
 
 	local text = player:getName() .. " broadcasted: " .. param
 	logger.info(text)
-	Broadcast(param)
+	Broadcast(player:getName() .. ": " .. param)
 	return true
 end
 

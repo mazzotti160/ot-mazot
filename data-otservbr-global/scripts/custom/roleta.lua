@@ -1,6 +1,6 @@
 local config = {
     actionId = 24252,  -- ActionID da alavanca
-    requiredItemId = 19082, 
+    requiredItemId = 19082,
     positions = {
         {x = 32343, y = 32234, z = 7}, -- Posição inicial
         {x = 32344, y = 32234, z = 7},
@@ -13,10 +13,95 @@ local config = {
         {x = 32351, y = 32234, z = 7}  -- Posição Final
     },
     items = {
-        { id = 3043, count = math.random(500, 1000), chance = 1 }, -- crystal coin
-        { id = 3215, count = math.random(25, 100), chance = 1 }, -- phoenix egg
-       
---count abaixo varia entre 1, 2, 3, 4 ou 5
+        druid = {
+{ id = 47373, count = 1, chance = 1 }, -- amber rod
+{ id = 22153, count = 1, chance = 1 }, -- dark wizard's crown
+{ id = 12809, count = 1, chance = 1 }, -- epic wisdom
+{ id = 34266, count = 1, chance = 1 }, -- Tibiapedia
+{ id = 34093, count = 1, chance = 1 }, -- soulstrider
+{ id = 34096, count = 1, chance = 1 }, -- soulshroud
+{ id = 34091, count = 1, chance = 1 }, -- soulhexer		
+{ id = 27458, count = 1, chance = 1 }, -- rod dest
+{ id = 39154, count = 1, chance = 1 }, -- arboreal tome
+{ id = 39153, count = 1, chance = 1 }, -- arboreal crown
+{ id = 39186, count = 1, chance = 1 }, -- charged arboreal ring
+{ id = 43887, count = 1, chance = 1, raro = true }, -- sanguine  galoshes		
+            -- Adicione outros itens de druida aqui
+        },
+        sorcerer = {
+{ id = 43884, count = 1, chance = 1, raro = true }, -- sanguine boots		
+{ id = 47372, count = 1, chance = 1 }, -- amber wand
+{ id = 27457, count = 1, chance = 1 }, -- wand dest
+{ id = 39183, count = 1, chance = 1 }, -- charged arcanomancer sig
+{ id = 39151, count = 1, chance = 1 }, -- arcanomancer regalia
+{ id = 39152, count = 1, chance = 1 }, -- arcanomancer folio
+{ id = 34095, count = 1, chance = 1 }, -- soulmantle
+{ id = 34090, count = 1, chance = 1 }, -- soultaint
+{ id = 34092, count = 1, chance = 1 }, -- soulshanks
+{ id = 44055, count = 1, chance = 1 }, -- the dragon spirit shield
+{ id = 44056, count = 1, chance = 1 }, -- the dragon spirit doll
+{ id = 44759, count = 1, chance = 1 }, -- aurora's collection
+{ id = 43882, count = 1, chance = 1, raro = true }, -- sanguine coil		
+            -- Adicione outros itens de sorcerer aqui
+        },
+        knight = {
+{ id = 34097, count = 1, chance = 1 }, -- pair of soulwalkers		
+{ id = 27453, count = 1, chance = 1 }, -- mace of destruction
+{ id = 27449, count = 1, chance = 1 }, -- blade of destruction
+{ id = 27451, count = 1, chance = 1 }, -- axe dest
+{ id = 27454, count = 1, chance = 1 }, -- hammer dest
+{ id = 27452, count = 1, chance = 1 }, -- chopper dest
+{ id = 27450, count = 1, chance = 1 }, -- slayer dest
+{ id = 39177, count = 1, chance = 1 }, -- charged spirithorn ring
+{ id = 39147, count = 1, chance = 1 }, -- spirithorn armor
+{ id = 39148, count = 1, chance = 1 }, -- spirithorn helmet
+{ id = 34086, count = 1, chance = 1 }, -- soulcrusher
+{ id = 34084, count = 1, chance = 1 }, -- soulbiter
+{ id = 34082, count = 1, chance = 1 }, -- soulcutter
+{ id = 34085, count = 1, chance = 1 }, -- souleater
+{ id = 34087, count = 1, chance = 1 }, -- soulmaimer
+{ id = 34099, count = 1, chance = 1 }, -- soulbastion
+{ id = 34083, count = 1, chance = 1 }, -- soulshredder
+{ id = 22889, count = 1, chance = 1 }, -- shield of destiny
+{ id = 25982, count = 1, chance = 1 }, -- mathmaster shield
+{ id = 39759, count = 1, chance = 1 }, -- golden gods' twilight doll
+{ id = 47369, count = 1, chance = 1 }, -- amber greataxe
+{ id = 47374, count = 1, chance = 1 }, -- amber sabre
+{ id = 47375, count = 1, chance = 1 }, -- amber axe
+{ id = 47376, count = 1, chance = 1 }, -- amber cudgel
+{ id = 47368, count = 1, chance = 1 }, -- amber slayer
+{ id = 47370, count = 1, chance = 1 }, -- amber bludgeon
+{ id = 43874, count = 1, chance = 1, raro = true }, -- sanguine battleaxe
+{ id = 43872, count = 1, chance = 1, raro = true }, -- sanguine bludgeon
+{ id = 43870, count = 1, chance = 1, raro = true }, -- sanguine razor
+{ id = 43868, count = 1, chance = 1, raro = true }, -- sanguine hatchet
+{ id = 43876, count = 1, chance = 1, raro = true }, -- sanguine legs
+{ id = 43866, count = 1, chance = 1, raro = true }, -- sanguine cudgel
+{ id = 43864, count = 1, chance = 1, raro = true }, -- sanguine blade		
+            -- Adicione itens de knight aqui
+        },
+        paladin = {
+{ id = 47371, count = 1, chance = 1 }, -- amber bow
+{ id = 27455, count = 1, chance = 1 }, -- bow dest
+{ id = 27456, count = 1, chance = 1 }, -- crossbow dest
+{ id = 39180, count = 1, chance = 1 }, -- charged alicorn ring
+{ id = 39150, count = 1, chance = 1 }, -- alicorn quiver
+{ id = 39149, count = 1, chance = 1 }, -- alicorn headguard
+{ id = 34094, count = 1, chance = 1 }, -- soulshell
+{ id = 34089, count = 1, chance = 1 }, -- soulpiercer
+{ id = 34088, count = 1, chance = 1 }, -- soulbleeder
+{ id = 34098, count = 1, chance = 1 }, -- pair of soultalkers
+{ id = 39761, count = 1, chance = 1 }, -- archery gods' twilight doll
+{ id = 35909, count = 1, chance = 1 }, -- chaos critical dice
+{ id = 16262, count = 1, chance = 1 }, -- dragon eye
+{ id = 47377, count = 1, chance = 1 }, -- amber crossbow
+{ id = 43877, count = 1, chance = 1, raro = true }, -- sanguine bow
+{ id = 43879, count = 1, chance = 1, raro = true }, -- sanguine crossbow
+{ id = 43881, count = 1, chance = 1, raro = true }, -- sanguine greaves		
+            -- Adicione itens de paladin aqui
+        },
+        misc = {
+{ id = 3215, count = math.random(25, 100), chance = 1 }, -- phoenix egg
 { id = 22720, count = math.random(1, 5), chance = 1 }, -- iron token
 { id = 43968, count = math.random(1, 5), chance = 1 }, -- bakra amalgamation
 { id = 39040, count = math.random(1, 5), chance = 1 }, -- fiery tear
@@ -32,23 +117,11 @@ local config = {
 { id = 16206, count = math.random(1, 5), chance = 1 }, -- abyssador lash
 { id = 16205, count = math.random(1, 5), chance = 1 }, -- gnomevil hat
 { id = 16136, count = math.random(1, 5), chance = 1 }, -- deathstrike snippet
---count até aqui varia entre 1, 2, 3, 4 ou 5.
 { id = 8153, count = 1, chance = 1 }, -- lootseller permission
 { id = 31633, count = 1, chance = 1 }, -- supreme cube 
 { id = 32226, count = 1, chance = 1 }, -- old radio forge 
 { id = 48240, count = 1, chance = 1 }, -- infinite food
 { id = 35376, count = 1, chance = 1 }, -- imbue orb
---store acima
-{ id = 27453, count = 1, chance = 1 }, -- mace of destruction
-{ id = 27449, count = 1, chance = 1 }, -- blade of destruction
-{ id = 27451, count = 1, chance = 1 }, -- axe dest
-{ id = 27454, count = 1, chance = 1 }, -- hammer dest
-{ id = 27452, count = 1, chance = 1 }, -- chopper dest
-{ id = 27450, count = 1, chance = 1 }, -- slayer dest
-{ id = 27455, count = 1, chance = 1 }, -- bow dest
-{ id = 27457, count = 1, chance = 1 }, -- wand dest
-{ id = 27456, count = 1, chance = 1 }, -- crossbow dest
-{ id = 27458, count = 1, chance = 1 }, -- rod dest
 { id = 8778, count = 1, chance = 1 }, -- jester doll
 { id = 25979, count = 1, chance = 1 }, -- draken doll
 { id = 9598, count = 1, chance = 1 }, -- whacking driller of fate
@@ -60,79 +133,15 @@ local config = {
 { id = 24395, count = 1, chance = 1 }, -- birthday backpack
 { id = 36724, count = 1, chance = 1 }, -- strike enhancement  
 { id = 36723, count = 1, chance = 1 }, -- kooldown-aid  
-{ id = 28484, count = math.random(1, 5), chance = 1 }, -- blueberry cupcake 
+{ id = 28484, count = math.random(1, 5), chance = 2 }, -- blueberry cupcake 
 { id = 9086, count = 1, chance = 1 }, -- blessed steak  
 { id = 36727, count = 1, chance = 1 }, -- wealth duplex  
 { id = 36725, count = 1, chance = 2 }, -- stamina extension  
 { id = 9079, count = 1, chance = 1 }, -- rotworm stew  
-{ id = 28486, count = math.random(1, 10), chance = 4 }, -- lemon cupcake  
+{ id = 28486, count = math.random(1, 10), chance = 2 }, -- lemon cupcake  
 { id = 28485, count = math.random(1, 5), chance = 2 }, -- strawberry cupcake  
 { id = 23541, count = 1, chance = 1 }, -- blue sphere  
 { id = 14674, count = 1, chance = 1 }, -- anniversary backpack
-{ id = 39177, count = 1, chance = 1 }, -- charged spirithorn ring
-{ id = 39180, count = 1, chance = 1 }, -- charged alicorn ring
-{ id = 39147, count = 1, chance = 1 }, -- spirithorn armor
-{ id = 39148, count = 1, chance = 1 }, -- spirithorn helmet
-{ id = 39150, count = 1, chance = 1 }, -- alicorn quiver
-{ id = 39149, count = 1, chance = 1 }, -- alicorn headguard
-{ id = 39152, count = 1, chance = 1 }, -- arcanomancer folio
-{ id = 39186, count = 1, chance = 1 }, -- charged arboreal ring
-{ id = 39183, count = 1, chance = 1 }, -- charged arcanomancer sig
-{ id = 39151, count = 1, chance = 1 }, -- arcanomancer regalia
-{ id = 39154, count = 1, chance = 1 }, -- arboreal tome
-{ id = 39153, count = 1, chance = 1 }, -- arboreal crown
-{ id = 34095, count = 1, chance = 1 }, -- soulmantle
-{ id = 34094, count = 1, chance = 1 }, -- soulshell
-{ id = 34086, count = 1, chance = 1 }, -- soulcrusher
-{ id = 34084, count = 1, chance = 1 }, -- soulbiter
-{ id = 34082, count = 1, chance = 1 }, -- soulcutter
-{ id = 34085, count = 1, chance = 1 }, -- souleater
-{ id = 34087, count = 1, chance = 1 }, -- soulmaimer
-{ id = 34090, count = 1, chance = 1 }, -- soultaint
-{ id = 34096, count = 1, chance = 1 }, -- soulshroud
-{ id = 34089, count = 1, chance = 1 }, -- soulpiercer
-{ id = 34088, count = 1, chance = 1 }, -- soulbleeder
-{ id = 34098, count = 1, chance = 1 }, -- pair of soultalkers
-{ id = 34091, count = 1, chance = 1 }, -- soulhexer
-{ id = 34097, count = 1, chance = 1 }, -- pair of soulwalkers
-{ id = 34093, count = 1, chance = 1 }, -- soulstrider
-{ id = 34092, count = 1, chance = 1 }, -- soulshanks
-{ id = 34099, count = 1, chance = 1 }, -- soulbastion
-{ id = 34083, count = 1, chance = 1 }, -- soulshredder
-{ id = 22889, count = 1, chance = 1 }, -- shield of destiny
-{ id = 25982, count = 1, chance = 1 }, -- mathmaster shield
-{ id = 39759, count = 1, chance = 1 }, -- golden gods' twilight doll
-{ id = 39761, count = 1, chance = 1 }, -- archery gods' twilight doll
-{ id = 35909, count = 1, chance = 1 }, -- chaos critical dice
-{ id = 16262, count = 1, chance = 1 }, -- dragon eye
-{ id = 22153, count = 1, chance = 1 }, -- dark wizard's crown
-{ id = 12809, count = 1, chance = 1 }, -- epic wisdom
-{ id = 34266, count = 1, chance = 1 }, -- Tibiapedia
-{ id = 47369, count = 1, chance = 1 }, -- amber greataxe
-{ id = 47371, count = 1, chance = 1 }, -- amber bow
-{ id = 47372, count = 1, chance = 1 }, -- amber wand
-{ id = 47373, count = 1, chance = 1 }, -- amber rod
-{ id = 47374, count = 1, chance = 1 }, -- amber sabre
-{ id = 47375, count = 1, chance = 1 }, -- amber axe
-{ id = 47376, count = 1, chance = 1 }, -- amber cudgel
-{ id = 47368, count = 1, chance = 1 }, -- amber slayer
-{ id = 47370, count = 1, chance = 1 }, -- amber bludgeon
-{ id = 47377, count = 1, chance = 1 }, -- amber crossbow
-{ id = 44055, count = 1, chance = 1 }, -- the dragon spirit shield
-{ id = 44056, count = 1, chance = 1 }, -- the dragon spirit doll
-{ id = 44759, count = 1, chance = 1 }, -- aurora's collection
-{ id = 43884, count = 1, chance = 1, raro = true }, -- sanguine boots
-{ id = 43874, count = 1, chance = 1, raro = true }, -- sanguine battleaxe
-{ id = 43882, count = 1, chance = 1, raro = true }, -- sanguine coil
-{ id = 43872, count = 1, chance = 1, raro = true }, -- sanguine bludgeon
-{ id = 43881, count = 1, chance = 1, raro = true }, -- sanguine greaves
-{ id = 43870, count = 1, chance = 1, raro = true }, -- sanguine razor
-{ id = 43879, count = 1, chance = 1, raro = true }, -- sanguine crossbow
-{ id = 43868, count = 1, chance = 1, raro = true }, -- sanguine hatchet
-{ id = 43877, count = 1, chance = 1, raro = true }, -- sanguine bow
-{ id = 43876, count = 1, chance = 1, raro = true }, -- sanguine legs
-{ id = 43866, count = 1, chance = 1, raro = true }, -- sanguine cudgel
-{ id = 43864, count = 1, chance = 1, raro = true }, -- sanguine blade
 { id = 19369, count = 1, chance = 1, raro = true }, -- eye of the storm
 { id = 14682, count = 1, chance = 1, raro = true }, -- Chayenne's magical key
 { id = 21445, count = 1, chance = 1, raro = true }, -- war backpack
@@ -168,10 +177,17 @@ local config = {
 { id = 49533, count = 1, chance = 1, raro = true }, -- dreadfire headpiece
 { id = 49534, count = 1, chance = 1, raro = true }, -- demonfang mask
 { id = 49531, count = 1, chance = 1, raro = true }, -- maliceforged helmet
-{ id = 49532, count = 1, chance = 1, raro = true } -- hellstalker visor
---id de item acima sempre com a } sem a , no ultimo id
-			}
+{ id = 49532, count = 1, chance = 1, raro = true } -- hellstalker visor		
+            -- Adicione itens diversos aqui
+        }
+    }
 }
+
+local chanceKnight = 20
+local chanceDruid = 20
+local chanceSorcerer = 20
+local chancePaladin = 20
+local chanceMisc = 20
 
 local isRouletteRunning = false
 
@@ -184,20 +200,49 @@ local function addItemToPlayer(player, item)
     end
 end
 
-local function getRandomItem()
+local function getRandomItemFromTable(tableItems)
     local totalWeight = 0
-    for _, item in ipairs(config.items) do
+    for _, item in ipairs(tableItems) do
         totalWeight = totalWeight + item.chance
     end
 
     local randomWeight = math.random() * totalWeight
     local cumulativeWeight = 0
-    for _, item in ipairs(config.items) do
+    for _, item in ipairs(tableItems) do
         cumulativeWeight = cumulativeWeight + item.chance
         if randomWeight <= cumulativeWeight then
             return item
         end
     end
+end
+
+local function getRandomItem()
+    local totalChance = chanceKnight + chanceDruid + chanceSorcerer + chancePaladin + chanceMisc
+    local randomChance = math.random(1, totalChance)
+
+    local cumulativeChance = 0
+
+    cumulativeChance = cumulativeChance + chanceKnight
+    if randomChance <= cumulativeChance then
+        return getRandomItemFromTable(config.items.knight)
+    end
+
+    cumulativeChance = cumulativeChance + chanceDruid
+    if randomChance <= cumulativeChance then
+        return getRandomItemFromTable(config.items.druid)
+    end
+
+    cumulativeChance = cumulativeChance + chanceSorcerer
+    if randomChance <= cumulativeChance then
+        return getRandomItemFromTable(config.items.sorcerer)
+    end
+
+    cumulativeChance = cumulativeChance + chancePaladin
+    if randomChance <= cumulativeChance then
+        return getRandomItemFromTable(config.items.paladin)
+    end
+
+    return getRandomItemFromTable(config.items.misc)
 end
 
 local function moveItems()
@@ -230,9 +275,11 @@ local function createItemWithEffect(position, item)
 end
 
 local function getItemConfigById(itemId)
-    for _, item in ipairs(config.items) do
-        if item.id == itemId then
-            return item
+    for _, tableItems in pairs(config.items) do
+        for _, item in ipairs(tableItems) do
+            if item.id == itemId then
+                return item
+            end
         end
     end
     return nil
@@ -240,7 +287,7 @@ end
 
 local function rouletteAction(player)
     isRouletteRunning = true
-    local steps = 35 --+ math.random(5, 10)  -- Número de passos que a roleta dará antes de parar
+    local steps = 35  -- Número de passos que a roleta dará antes de parar
     local interval = 30  -- Intervalo
 
     local currentItem = getRandomItem()

@@ -539,6 +539,9 @@ if NpcHandler == nil then
 
 --teste chamada npcs por nome
 local npcShops = { -- Lista de NPCs e se eles possuem loja
+["Fadil"] = true,
+["Rashid"] = true,
+["Esrik"] = true,
 ["Task Shop"] = true,
 ["Testserv"] = true,
 ["Arenator"] = true,
