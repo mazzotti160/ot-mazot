@@ -27,7 +27,7 @@ maintainModeMessage = ""
 -- NOTE: removeBeginningWeaponAmmunition: spears, arrows, bolt have endless ammo (allows training for paladins)
 -- NOTE: refundManaOnBeginningWeapons: wand of vortex and snakebite refund mana used (allows training for mages)
 -- NOTE: loginProtectionTime in MS
-worldType = "no-pvp"
+worldType = "pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 7
 pzLocked = 60 * 1000
@@ -42,9 +42,9 @@ whiteSkullTime = 15 * 60 * 1000
 stairJumpExhaustion = 2 * 1000
 experienceByKillingPlayers = false
 expFromPlayersLevelRange = 75
-dayKillsToRedSkull = 3
-weekKillsToRedSkull = 5
-monthKillsToRedSkull = 10
+dayKillsToRedSkull = 6
+weekKillsToRedSkull = 10
+monthKillsToRedSkull = 40
 redSkullDuration = 1
 blackSkullDuration = 3
 orangeSkullDuration = 7
@@ -57,7 +57,7 @@ cleanProtectionZones = false
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25,
 -- It's recommended to use a range like min 50 in this function, otherwise you will be disconnected after equipping two-handed distance weapons.
-ip = "35.199.64.17"
+ip = "35.247.208.128"
 allowOldProtocol = false
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
@@ -158,10 +158,10 @@ forgeTierLossReduction = 50
 forgeAmountMultiplier = 3
 forgeMinSlivers = 3
 forgeMaxSlivers = 7
-forgeInfluencedLimit = 300
-forgeFiendishLimit = 4
-forgeFiendishIntervalType = "hour"
-forgeFiendishIntervalTime = "1"
+forgeInfluencedLimit = 9000
+forgeFiendishLimit = 40
+forgeFiendishIntervalType = "minute"
+forgeFiendishIntervalTime = "30"
 
 --ruseChanceFormulaA = 11
 --ruseChanceFormulaB = 11
@@ -430,8 +430,8 @@ maxMarketOffersAtATimePerPlayer = 100
 
 -- MySQL
 mysqlHost = "127.0.0.1"
-mysqlUser = "owner.mazot"
-mysqlPass = "m$7@R%2xP5tL$9%aZ3w@8%yK1cN$6%vQ4dB"
+mysqlUser = "admin-mazot@localhost"
+mysqlPass = "rT2yG6wP8$zL0&qR#t5vW!yG8uA3mF*jE6bD1cN4sH0kXoI7pZ2aQ9lV5iUx"
 mysqlDatabase = "mazot-main"
 mysqlDatabaseBackup = false
 mysqlPort = 3306
@@ -464,7 +464,7 @@ maxMessageBuffer = 4
 emoteSpells = true
 allowWalkthrough = true
 coinPacketSize = 1
-coinImagesURL = "https://mazot.com.br/images/store/"
+coinImagesURL = "http://35.247.208.128/images/store/"
 classicAttackSpeed = true
 showScriptsLogInConsole = false
 -- time to suppress negative conditions after being affected by them (ms)
@@ -522,24 +522,24 @@ rateExp = 1
 rateSkill = 1
 rateLoot = 3
 rateMagic = 1
-rateSpawn = 1
+rateSpawn = 3
 
 -- Killing in the name of Quest
 rateKillingInTheNameOfPoints = 1
 
 -- Today regeneration condition over an loop every 1 second,
 -- So values which should regenerated less then 1 second or won't will work
-rateHealthRegen = 50000.0
-rateHealthRegenSpeed = 4.0
-rateManaRegen = 50000.0
-rateManaRegenSpeed = 4.0
-rateSoulRegen = 1.0
+rateHealthRegen = 50.0
+rateHealthRegenSpeed = 2.0
+rateManaRegen = 50.0
+rateManaRegenSpeed = 2.0
+rateSoulRegen = 3.0
 rateSoulRegenSpeed = 1.0
 
 rateSpellCooldown = 1.0
 rateAttackSpeed = 1.0
 rateOfflineTrainingSpeed = rateAttackSpeed
-rateExerciseTrainingSpeed = 1.0
+rateExerciseTrainingSpeed = 3.0
 
 -- Monster rates
 rateMonsterHealth = 1.0
@@ -554,7 +554,7 @@ rateBossHealth = 1.0
 rateBossAttack = 1.0
 rateBossDefense = 1.0
 
-bossDefaultTimeToFightAgain = 20 * 60 * 60 -- 20 hours
+bossDefaultTimeToFightAgain = 10 * 60 * 60 -- 20 hours
 bossDefaultTimeToDefeat = 20 * 60 -- 20 minutes
 
 -- Monsters
